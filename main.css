@@ -1,13 +1,18 @@
 /* Main Menu Styling */
-.main-menu {
+#main-menu {
   display: flex;
 }
-.main-menu li {
+#main-menu li {
   width: 33%;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
   list-style-type: none;
+  transition: all .5 ease;
+}
+
+#main-menu li:hover {
+  cursor: pointer;
 }
 .main-menu-labels {
   margin: 0;
@@ -20,6 +25,11 @@
 .sub-menu {
   padding-left: 0;
   background-color: #dde1e7;
+  opacity: 0;
+}
+
+.sub-menu.open {
+  opacity: 1;
 }
 .sub-menu li {
   display: block;
